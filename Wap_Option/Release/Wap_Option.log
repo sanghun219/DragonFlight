@@ -1,0 +1,9 @@
+﻿  Cursor.cpp
+c:\users\sangh\source\repos\wap_option\wap_option\cursor.cpp(17): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+c:\users\sangh\source\repos\wap_option\wap_option\cursor.cpp(70): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+  Option.cpp
+c:\users\sangh\source\repos\wap_option\wap_option\sound.h(3): fatal error C1083: 포함 파일을 열 수 없습니다. 'fmod.h': No such file or directory
+  Sound.cpp
+c:\users\sangh\source\repos\wap_option\wap_option\sound.h(3): fatal error C1083: 포함 파일을 열 수 없습니다. 'fmod.h': No such file or directory
+  소스.cpp
+c:\users\sangh\source\repos\wap_option\wap_option\sound.h(3): fatal error C1083: 포함 파일을 열 수 없습니다. 'fmod.h': No such file or directory
