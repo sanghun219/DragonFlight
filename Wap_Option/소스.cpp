@@ -7,10 +7,9 @@ int main(void)
 	Cursor::GetInst()->CreateBuffer();
 	Option op;
 	Sound::GetInst()->Init();
-	op.Init();
-	
 	Sound::GetInst()->Play(SOUND::MENU);
 	
+	op.Init();
 	while (true)
 	{		
 		

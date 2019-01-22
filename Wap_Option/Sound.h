@@ -1,6 +1,7 @@
 #pragma once
 #include<Windows.h>
 #include<fmod.h>
+
 enum class SOUND
 {
 	LOGO,
@@ -19,9 +20,9 @@ private:
 	static Sound * _Inst;
 	FMOD_SYSTEM * g_System;
 	FMOD_SOUND *g_Sound[5];
-	FMOD_CHANNEL *g_Channel[4];
-
-	float volume = 0.6f;
+	static FMOD_CHANNEL *g_Channel[4];
+public:
+	float volume[2] = { 0.6f,0.6f };
 
 public:
 	static Sound * GetInst()
@@ -35,9 +36,13 @@ public:
 
 public:
 	void Init();
+	void Update();
 	void Play(SOUND type);
 	void SetVolume(float indecreaeVolume, BGMEFF channel);
-	const float &GetVolume() { return volume; }
+	void Stop(SOUND sd);
+	const float &GetVolume(int ix)  = delete;
+	
+	
 private:
 	Sound();
 public:

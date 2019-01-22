@@ -30,7 +30,9 @@ void Option::Init()
 
 void Option::Update()
 {
+	
 	KeyController();
+	Sound::GetInst()->Update();
 }
 
 void Option::Draw()
@@ -121,7 +123,7 @@ void Option::KeyController()
 				if (EffectSizeBlock(true))
 				{
 					Sound::GetInst()->SetVolume(-0.2f, BGMEFF::EFFECT);
-					Cursor::GetInst()->BufferWrite(10, 10, Sound::GetInst()->GetVolume(), Color::WHITE);
+					//Cursor::GetInst()->BufferWrite(10, 10, Sound::GetInst()->GetVolume(static_cast<int>(BGMEFF::EFFECT)), Color::WHITE);
 					_effect--;
 				}
 				break;
@@ -130,12 +132,13 @@ void Option::KeyController()
 				{
 					_back--;
 					Sound::GetInst()->SetVolume(-0.2f, BGMEFF::BGM);
-					Cursor::GetInst()->BufferWrite(10, 10, Sound::GetInst()->GetVolume(), Color::WHITE);
+					//Cursor::GetInst()->BufferWrite(10, 10, Sound::GetInst()->GetVolume(static_cast<int>(BGMEFF::BGM)), Color::WHITE);
 				}
 				break;
 			case static_cast<int>(BUTTON::SPEED) :
 				if (SpeedSizeBlock(true))
 				{
+					//global_speed-=0.2f
 					_speed--;
 				}
 				break;
@@ -152,7 +155,7 @@ void Option::KeyController()
 				if (EffectSizeBlock(false))
 				{
 					Sound::GetInst()->SetVolume(0.2f, BGMEFF::EFFECT);
-					Cursor::GetInst()->BufferWrite(10, 10, Sound::GetInst()->GetVolume(), Color::WHITE);
+					//Cursor::GetInst()->BufferWrite(10, 10, Sound::GetInst()->GetVolume(static_cast<int>(BGMEFF::EFFECT)), Color::WHITE);
 					_effect++;
 				}
 				break;
@@ -161,12 +164,13 @@ void Option::KeyController()
 				{
 					_back++;
 					Sound::GetInst()->SetVolume(0.2f, BGMEFF::BGM);
-					Cursor::GetInst()->BufferWrite(10, 10, Sound::GetInst()->GetVolume(), Color::WHITE);
+					//Cursor::GetInst()->BufferWrite(10, 10, Sound::GetInst()->GetVolume(static_cast<int>(BGMEFF::BGM)), Color::WHITE);
 				}
 				break;
 			case static_cast<int>(BUTTON::SPEED) :
 				if (SpeedSizeBlock(false))
 				{
+					//global_speed+=0.2f
 					_speed++;
 				}
 				break;

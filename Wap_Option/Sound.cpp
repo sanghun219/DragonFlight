@@ -1,8 +1,9 @@
 #include "Sound.h"
-
+#include <iostream>
+#include "Cursor.h"
 
 Sound* Sound::_Inst = nullptr;
-
+FMOD_CHANNEL* Sound::g_Channel[4] = { nullptr };
 Sound::Sound()
 {
 }
@@ -26,7 +27,11 @@ void Sound::Init()
 	FMOD_System_Init(g_System, 10, FMOD_INIT_NORMAL, NULL);
 	FMOD_System_CreateSound(g_System, "Music/MainBgm.mp3", FMOD_LOOP_NORMAL, 0, &g_Sound[static_cast<int>(SOUND::MENU)]);
 	FMOD_System_CreateSound(g_System, "Music/Click.wav", FMOD_DEFAULT, 0, &g_Sound[static_cast<int>(SOUND::CLICK)]);
-	FMOD_System_PlaySound(g_System, g_Sound[static_cast<int>(SOUND::MENU)], NULL, 0, &g_Channel[0]);
+}
+
+void Sound::Update()
+{
+	
 }
 
 void Sound::Play(SOUND type)
@@ -52,18 +57,27 @@ void Sound::Play(SOUND type)
 
 void Sound::SetVolume(float indecreaeVolume, BGMEFF channel)
 {
-	volume += indecreaeVolume;
-	if (volume >= 0.f && volume <= 1.f)
+	volume[static_cast<int>(channel)] += indecreaeVolume;
+	if (volume[static_cast<int>(channel)] >= 0.f && volume[static_cast<int>(channel)] <= 1.f)
 	{
-		FMOD_Channel_SetVolume(g_Channel[static_cast<int>(channel)], volume);
+		
+		FMOD_Channel_SetVolume(g_Channel[static_cast<int>(channel)], volume[static_cast<int>(channel)]);
+		FMOD_Channel_SetPaused(g_Channel[static_cast<int>(channel)], false);
 	}
-	else if (volume < 0)
+	else if (volume[static_cast<int>(channel)] < 0)
 	{
-		volume = 0.f;
+		volume[static_cast<int>(channel)] = 0.f;
 	}
-	else if (volume > 1.f)
+	else if (volume[static_cast<int>(channel)] > 1.f)
 	{
-		volume = 1.f;
+		volume[static_cast<int>(channel)] = 1.f;
 	}
 	
 }
+
+void Sound::Stop(SOUND sd)
+{
+	FMOD_Channel_Stop(g_Channel[static_cast<int>(sd)]);
+	
+}
+

@@ -24,6 +24,7 @@ private:
 	int _cursorIndex;
 	bool block;
 	
+	
 public:
 	void Init();
 	void Update();
