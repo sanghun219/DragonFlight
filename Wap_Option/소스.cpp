@@ -4,13 +4,13 @@
 #include "Cursor.h"
 int main(void)
 {
-
+	Cursor::GetInst()->CreateBuffer();
 	Option op;
 	Sound::GetInst()->Init();
 	op.Init();
 	
-	Sound::GetInst()->Play(Sound::SOUND::MENU);
-	Cursor::GetInst()->CreateBuffer();
+	Sound::GetInst()->Play(SOUND::MENU);
+	
 	while (true)
 	{		
 		

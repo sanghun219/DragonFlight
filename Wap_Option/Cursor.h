@@ -16,7 +16,7 @@ public:
 private:
 	HANDLE hBuffer[2];
 	int nScreenIndex;
-	int MAP_X_MAX, MAP_Y_MAX;
+	SHORT MAP_X_MAX, MAP_Y_MAX;
 public:
 
 	void CreateBuffer();
@@ -24,6 +24,7 @@ public:
 	void BufferWrite(int x, int y, std::string _string, Color color);
 	void BufferWrite(int x, int y, int _string, Color color);
 	void BufferWrite(int x, int y,long double _string, Color color);
+	void BufferWrite(int x, int y, float _string, Color color);
 	void Flipping();
 	void BufferClear();
 	void Release();

@@ -70,8 +70,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>E:\Download\FMOD Studio API Windows\api\lowlevel\inc;$(IncludePath)</IncludePath>
-    <LibraryPath>E:\Download\FMOD Studio API Windows\api\lowlevel\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\sangh\Desktop\option\Wap_Option\Inc;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\sangh\Desktop\option\Wap_Option\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

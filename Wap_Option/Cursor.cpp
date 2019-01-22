@@ -42,7 +42,7 @@ void Cursor:: CreateBuffer()
 void Cursor::BufferWrite(int x, int y, const char *string, Color color)
 {
 	DWORD dw;
-	COORD CursorPosition = { x, y };
+	COORD CursorPosition = { static_cast<SHORT>(x), static_cast<SHORT>(y) };
 	SetConsoleCursorPosition(hBuffer[nBufferIndex], CursorPosition);
 	SetConsoleTextAttribute(hBuffer[nBufferIndex], static_cast<WORD>(color));
 	WriteFile(hBuffer[nBufferIndex], string, strlen(string), &dw, NULL);
@@ -51,7 +51,7 @@ void Cursor::BufferWrite(int x, int y, std::string _string, Color color)
 {
 	const char* string = _string.c_str();
 	DWORD dw;
-	COORD CursorPosition = { x, y };
+	COORD CursorPosition = { static_cast<SHORT>(x), static_cast<SHORT>(y) };
 	SetConsoleCursorPosition(hBuffer[nBufferIndex], CursorPosition);
 	SetConsoleTextAttribute(hBuffer[nBufferIndex], static_cast<WORD>(color));
 	WriteFile(hBuffer[nBufferIndex], string, strlen(string), &dw, NULL);
@@ -61,7 +61,7 @@ void Cursor::BufferWrite(int x, int y, int _string, Color color)
 	std::string str = std::to_string(_string);
 	const char* string = str.c_str();
 	DWORD dw;
-	COORD CursorPosition = { x, y };
+	COORD CursorPosition = { static_cast<SHORT>(x), static_cast<SHORT>(y) };
 	SetConsoleCursorPosition(hBuffer[nBufferIndex], CursorPosition);
 	SetConsoleTextAttribute(hBuffer[nBufferIndex], static_cast<WORD>(color));
 	WriteFile(hBuffer[nBufferIndex], string, strlen(string), &dw, NULL);
@@ -71,7 +71,18 @@ void Cursor::BufferWrite(int x, int y, long double _string, Color color)
 	std::string str = std::to_string(_string);
 	const char* string = str.c_str();
 	DWORD dw;
-	COORD CursorPosition = { x, y };
+	COORD CursorPosition = { static_cast<SHORT>(x), static_cast<SHORT>(y) };
+	SetConsoleCursorPosition(hBuffer[nBufferIndex], CursorPosition);
+	SetConsoleTextAttribute(hBuffer[nBufferIndex], static_cast<WORD>(color));
+	WriteFile(hBuffer[nBufferIndex], string, strlen(string), &dw, NULL);
+}
+
+void Cursor::BufferWrite(int x, int y, float _string, Color color)
+{
+	std::string str = std::to_string(_string);
+	const char* string = str.c_str();
+	DWORD dw;
+	COORD CursorPosition = { static_cast<SHORT>(x), static_cast<SHORT>(y) };
 	SetConsoleCursorPosition(hBuffer[nBufferIndex], CursorPosition);
 	SetConsoleTextAttribute(hBuffer[nBufferIndex], static_cast<WORD>(color));
 	WriteFile(hBuffer[nBufferIndex], string, strlen(string), &dw, NULL);
