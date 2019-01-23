@@ -101,7 +101,7 @@ void Option::KeyController()
 		{		
 			cursorColor[_cursorIndex] = Color::WHITE;		
 			cursorColor[--_cursorIndex] = Color::GREEN;
-			
+			Sound::GetInst()->Play(SOUND::CLICK);
 		}
 	
 	}
@@ -111,6 +111,7 @@ void Option::KeyController()
 		{
 			cursorColor[_cursorIndex] = Color::WHITE;
 			cursorColor[++_cursorIndex] = Color::GREEN;
+			Sound::GetInst()->Play(SOUND::CLICK);
 		
 		}
 	}
@@ -123,7 +124,7 @@ void Option::KeyController()
 				if (EffectSizeBlock(true))
 				{
 					Sound::GetInst()->SetVolume(-0.2f, BGMEFF::EFFECT);
-					//Cursor::GetInst()->BufferWrite(10, 10, Sound::GetInst()->GetVolume(static_cast<int>(BGMEFF::EFFECT)), Color::WHITE);
+					Cursor::GetInst()->BufferWrite(10, 10, Sound::GetInst()->GetVolume(static_cast<int>(BGMEFF::EFFECT)), Color::WHITE);
 					_effect--;
 				}
 				break;
@@ -154,9 +155,10 @@ void Option::KeyController()
 			case static_cast<int>(BUTTON::EFFECT) :
 				if (EffectSizeBlock(false))
 				{
+					_effect++;
 					Sound::GetInst()->SetVolume(0.2f, BGMEFF::EFFECT);
 					//Cursor::GetInst()->BufferWrite(10, 10, Sound::GetInst()->GetVolume(static_cast<int>(BGMEFF::EFFECT)), Color::WHITE);
-					_effect++;
+					
 				}
 				break;
 			case static_cast<int>(BUTTON::BACK) :

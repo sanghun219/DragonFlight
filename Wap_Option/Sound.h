@@ -40,7 +40,7 @@ public:
 	void Play(SOUND type);
 	void SetVolume(float indecreaeVolume, BGMEFF channel);
 	void Stop(SOUND sd);
-	const float &GetVolume(int ix)  = delete;
+	const float &GetVolume(int ix) { return volume[ix]; }
 	
 	
 private:

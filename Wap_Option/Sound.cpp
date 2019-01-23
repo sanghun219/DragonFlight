@@ -31,11 +31,12 @@ void Sound::Init()
 
 void Sound::Update()
 {
-	
+	FMOD_System_Update(g_System);
 }
 
 void Sound::Play(SOUND type)
 {
+	
 	switch (type)
 	{
 	case SOUND::LOGO:
@@ -47,6 +48,9 @@ void Sound::Play(SOUND type)
 		break;
 	case SOUND::CLICK:
 		FMOD_System_PlaySound(g_System, g_Sound[static_cast<int>(type)], NULL, 0, &g_Channel[static_cast<int>(BGMEFF::EFFECT)]);
+		FMOD_Channel_SetVolume(g_Channel[static_cast<int>(BGMEFF::EFFECT)], volume[static_cast<int>(BGMEFF::EFFECT)]);
+		FMOD_Channel_SetPaused(g_Channel[static_cast<int>(BGMEFF::EFFECT)], false);
+		
 		break;
 	default:
 		break;
