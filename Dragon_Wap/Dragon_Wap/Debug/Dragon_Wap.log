@@ -1,6 +1,1 @@
-﻿  EntryPoint.cpp
-  FileMgr.cpp
-  SceneMgr.cpp
-  코드를 생성하고 있습니다...
-c:\users\sangh\desktop\dragon_git\dragon_wap\dragon_wap\filemgr.h(47): warning C4172: 지역 변수 또는 임시: file의 주소를 반환하고 있습니다.
-  Dragon_Wap.vcxproj -> C:\Users\sangh\Desktop\Dragon_git\Dragon_Wap\Debug\Dragon_Wap.exe
+﻿  Dragon_Wap.vcxproj -> C:\Users\sangh\OneDrive\Desktop\Dragon_wap\DragonFlight\Dragon_Wap\Debug\Dragon_Wap.exe

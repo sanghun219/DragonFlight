@@ -5,9 +5,9 @@
 class EntryPoint:public IScene
 {
 private:
-	FileMgr<RankFile> filemgr;
+	
 private:
-	void CreateUserInfo(std::string fileName = "han.txt");
+	
 	
 public:
 	virtual void Init()override;
