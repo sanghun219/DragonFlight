@@ -76,7 +76,11 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -94,6 +98,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -117,15 +122,29 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Cursor.cpp" />
+    <ClCompile Include="EntryPoint.cpp" />
+    <ClCompile Include="FileMgr.cpp" />
+    <ClCompile Include="IFile.cpp" />
+    <ClCompile Include="IObject.cpp" />
     <ClCompile Include="IScene.cpp" />
     <ClCompile Include="Maincpp.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="RankFile.cpp" />
     <ClCompile Include="SceneMgr.cpp" />
     <ClCompile Include="Stage1.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Color.h" />
     <ClInclude Include="Cursor.h" />
+    <ClInclude Include="EntryPoint.h" />
+    <ClInclude Include="FileMgr.h" />
+    <ClInclude Include="IFile.h" />
+    <ClInclude Include="IObject.h" />
     <ClInclude Include="IScene.h" />
+    <ClInclude Include="RankFile.h" />
+    <ClInclude Include="Status.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Position.h" />
     <ClInclude Include="SceneMgr.h" />
     <ClInclude Include="Stage1.h" />
   </ItemGroup>

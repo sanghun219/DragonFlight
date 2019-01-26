@@ -28,6 +28,27 @@
     <Filter Include="소스 파일\99.Manager\Cursor">
       <UniqueIdentifier>{242dabaa-d92e-42a7-be3a-f73f3841292c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\01.Object">
+      <UniqueIdentifier>{9f065f7f-ec31-420a-b13c-6798c49b7efb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01.Object\Player">
+      <UniqueIdentifier>{b22ae453-216d-4f32-b898-1b76e41c95b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\98.Factory">
+      <UniqueIdentifier>{6d6a6a7f-5ec5-41bd-b347-b0933c7eefc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\00.Scene\EntryPoint">
+      <UniqueIdentifier>{f8b753ff-e187-44dc-8c75-fee9f6af6501}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\99.Manager\FileMgr">
+      <UniqueIdentifier>{76529ec4-de10-4325-b9a4-6adcaf621072}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\98.Factory\File">
+      <UniqueIdentifier>{2f992994-d3d2-40a6-8ac7-3d383c65f5c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\98.Factory\File\RankFile">
+      <UniqueIdentifier>{53d5605b-8ea4-48ec-94ff-91a5eefc4077}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Maincpp.cpp">
@@ -45,6 +66,24 @@
     <ClCompile Include="Cursor.cpp">
       <Filter>소스 파일\99.Manager\Cursor</Filter>
     </ClCompile>
+    <ClCompile Include="IObject.cpp">
+      <Filter>소스 파일\01.Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>소스 파일\01.Object\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="EntryPoint.cpp">
+      <Filter>소스 파일\00.Scene\EntryPoint</Filter>
+    </ClCompile>
+    <ClCompile Include="FileMgr.cpp">
+      <Filter>소스 파일\99.Manager\FileMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="IFile.cpp">
+      <Filter>소스 파일\98.Factory\File</Filter>
+    </ClCompile>
+    <ClCompile Include="RankFile.cpp">
+      <Filter>소스 파일\98.Factory\File\RankFile</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="IScene.h">
@@ -61,6 +100,30 @@
     </ClInclude>
     <ClInclude Include="Cursor.h">
       <Filter>소스 파일\99.Manager\Cursor</Filter>
+    </ClInclude>
+    <ClInclude Include="IObject.h">
+      <Filter>소스 파일\01.Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Position.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>소스 파일\01.Object\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Status.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="EntryPoint.h">
+      <Filter>소스 파일\00.Scene\EntryPoint</Filter>
+    </ClInclude>
+    <ClInclude Include="FileMgr.h">
+      <Filter>소스 파일\99.Manager\FileMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="IFile.h">
+      <Filter>소스 파일\98.Factory\File</Filter>
+    </ClInclude>
+    <ClInclude Include="RankFile.h">
+      <Filter>소스 파일\98.Factory\File\RankFile</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

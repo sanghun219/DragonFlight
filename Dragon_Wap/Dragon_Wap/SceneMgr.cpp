@@ -1,6 +1,7 @@
 #include "SceneMgr.h"
 #include "IScene.h"
 #include "Stage1.h"
+#include "EntryPoint.h"
 SceneMgr* SceneMgr::m_pInst = nullptr;
 
 SceneMgr::SceneMgr()
@@ -24,6 +25,9 @@ void SceneMgr::SetScene(SCENE scene)
 	switch (scene)
 	{
 	case SCENE::LOGO:
+		break;
+	case SCENE::ENTRY:
+		m_Scene = new EntryPoint();
 		break;
 	case SCENE::MENU:
 		break;

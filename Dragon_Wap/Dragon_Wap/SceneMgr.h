@@ -4,6 +4,7 @@ class IScene;
 enum class SCENE
 {
 	LOGO,
+	ENTRY,
 	MENU,
 	OPTION,
 	STAGE1,
