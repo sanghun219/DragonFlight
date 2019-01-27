@@ -52,6 +52,12 @@
     <Filter Include="소스 파일\99.Manager\Sound">
       <UniqueIdentifier>{3df40315-319a-4f2c-a261-6666742b80da}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\99.Manager\Graphics">
+      <UniqueIdentifier>{9b2c847c-e03e-4613-972a-3bc490c49bda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\99.Manager\KeyMgr">
+      <UniqueIdentifier>{f32aba15-5ec2-4612-a8ba-a09452d86a48}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Maincpp.cpp">
@@ -89,6 +95,12 @@
     </ClCompile>
     <ClCompile Include="..\..\..\..\Wap_Option\Wap_Option\Sound.cpp">
       <Filter>소스 파일\99.Manager\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics.cpp">
+      <Filter>소스 파일\99.Manager\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyMgr.cpp">
+      <Filter>소스 파일\99.Manager\KeyMgr</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -133,6 +145,12 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\Wap_Option\Wap_Option\Sound.h">
       <Filter>소스 파일\99.Manager\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics.h">
+      <Filter>소스 파일\99.Manager\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyMgr.h">
+      <Filter>소스 파일\99.Manager\KeyMgr</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,5 +1,14 @@
 #pragma once
 #include <string>
+enum class MOTION
+{
+	NORMAL,
+	ATTACK,
+	FEVER,
+	ATTACKED,
+	DIE,
+};
+
 class Status
 {
 protected:
@@ -8,6 +17,7 @@ protected:
 	double Exp;
 	std::string Name;
 	double Speed;
+	MOTION motion;
 public:
 
 public:

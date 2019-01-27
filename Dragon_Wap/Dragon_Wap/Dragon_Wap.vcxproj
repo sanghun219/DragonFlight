@@ -134,9 +134,11 @@
     <ClCompile Include="Cursor.cpp" />
     <ClCompile Include="EntryPoint.cpp" />
     <ClCompile Include="FileMgr.cpp" />
+    <ClCompile Include="Graphics.cpp" />
     <ClCompile Include="IFile.cpp" />
     <ClCompile Include="IObject.cpp" />
     <ClCompile Include="IScene.cpp" />
+    <ClCompile Include="KeyMgr.cpp" />
     <ClCompile Include="Maincpp.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="RankFile.cpp" />
@@ -149,9 +151,11 @@
     <ClInclude Include="Cursor.h" />
     <ClInclude Include="EntryPoint.h" />
     <ClInclude Include="FileMgr.h" />
+    <ClInclude Include="Graphics.h" />
     <ClInclude Include="IFile.h" />
     <ClInclude Include="IObject.h" />
     <ClInclude Include="IScene.h" />
+    <ClInclude Include="KeyMgr.h" />
     <ClInclude Include="RankFile.h" />
     <ClInclude Include="Status.h" />
     <ClInclude Include="Player.h" />
