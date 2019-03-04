@@ -66,7 +66,7 @@ void Cursor::BufferWrite(int x, int y, int _string, Color color)
 	SetConsoleTextAttribute(hBuffer[nBufferIndex], static_cast<WORD>(color));
 	WriteFile(hBuffer[nBufferIndex], string, strlen(string), &dw, NULL);
 }
-void Cursor::BufferWrite(int x, int y, long double _string, Color color)
+void Cursor::BufferWrite(int x, int y, double _string, Color color)
 {
 	std::string str = std::to_string(_string);
 	const char* string = str.c_str();

@@ -11,9 +11,12 @@ public:
 		this->X = _x;
 		this->Y = _y;
 	}
-	const Position &GetPosition()const
+	const unsigned short &GetPositionX()const
 	{
-		return *this;
+		return X;
 	}
-
+	const unsigned short &GetPositionY()const
+	{
+		return Y;
+	}
 };

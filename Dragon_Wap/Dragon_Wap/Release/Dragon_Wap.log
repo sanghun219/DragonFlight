@@ -1,9 +1,15 @@
-﻿  EntryPoint.cpp
+﻿  Sound.cpp
+c1xx : fatal error C1083: 소스 파일을 열 수 없습니다. '..\..\..\..\Wap_Option\Wap_Option\Sound.cpp': No such file or directory
+  Cursor.cpp
+  EntryPoint.cpp
+  FileMgr.cpp
+  Graphics.cpp
+  IFile.cpp
+  IObject.cpp
+  IScene.cpp
   KeyMgr.cpp
+  Maincpp.cpp
+  Player.cpp
+  RankFile.cpp
   SceneMgr.cpp
-  코드를 생성하고 있습니다.
-  2 of 121 functions ( 1.7%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
-  코드를 생성했습니다.
-  Dragon_Wap.vcxproj -> C:\Users\sangh\OneDrive\Desktop\Dragon_wap\DragonFlight\Dragon_Wap\Release\Dragon_Wap.exe
+  Stage1.cpp

@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include "Color.h"
+#include "Status.h"
 enum class GPS 
 {
 	PLAYER,
@@ -19,7 +20,7 @@ enum class GPS
 enum class GPS_SIZE 
 {
 	NORMAL =3,
-	BIG =6,
+	BIG =8,
 	BOSS =12,
 	END,
 };
@@ -32,7 +33,7 @@ public:
 
 public:
 	void GpsInit();
-	void GpsDraw (GPS gps, int x, int y,Color color = Color::WHITE)const;
+	void GpsDraw (GPS gps,MOTION motion, int x, int y,Color color = Color::WHITE)const;
 	//void Animate();
 	
 public:

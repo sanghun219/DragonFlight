@@ -17,5 +17,5 @@ enum class Color //»ö»ó
 	VIOLET,
 	YELLOW,
 	WHITE,
-
+	END,
 };

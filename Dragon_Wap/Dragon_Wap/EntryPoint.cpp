@@ -1,10 +1,12 @@
 #include "EntryPoint.h"
 #include "Cursor.h"
 #include "Graphics.h"
+#include "Timer.h"
 using namespace std;
 
 EntryPoint::EntryPoint()
 {
+
 }
 
 
@@ -21,60 +23,76 @@ void EntryPoint::Frame1()
 	Cursor::GetInst()->BufferWrite(15, 3, "¦¢                                    ¦¢", Color::WHITE);
 	Cursor::GetInst()->BufferWrite(15, 4, "¦¢                                    ¦¢", Color::WHITE);
 	Cursor::GetInst()->BufferWrite(15, 5, "¦¢                                    ¦¢", Color::WHITE);
-
-	//Cursor::GetInst()->BufferWrite(15, 15, Gp->NormalCharacter[static_cast<unsigned int>(GPS::PLAYER)][0], Color::WHITE);
 	
 }
 
 void EntryPoint::Frame2()
 {
-	
+	if (ClearFrame2) return;
+	static unsigned short ComPosX = 10;
+	static unsigned short ComPosY = 22;
+	static MOTION bossmotion = MOTION::NORMAL;
 
-
-	static unsigned short ComPosX = 6;
-	static unsigned short ComPosY = 17;
-	if (ComPosY < 5)
+	if (ComPosY > 15)
 	{
-
+		ComPosY--;
 	}
-	Gp->GpsDraw(GPS::PLAYER, ComPosX+20, ComPosY+2);
-	Gp->GpsDraw(GPS::PLAYER, ComPosX+24, ComPosY+1);
-	Gp->GpsDraw(GPS::PLAYER, ComPosX+28, ComPosY);
-	Gp->GpsDraw(GPS::PLAYER, ComPosX+32, ComPosY+1);
-	Gp->GpsDraw(GPS::PLAYER, ComPosX+36, ComPosY+2);
+	else
+	{	
+		static unsigned short BulletY = ComPosY;
+		static int pick = 5;
+		if (pick != 0)
+		{
+			if (BulletY > 5)
+			{
+				BulletY--;
+			}
+			else
+			{
+				BulletY = ComPosY;
+				pick--;
+			}
+			Cursor::GetInst()->BufferWrite(ComPosX + 20, BulletY + 1, "£ª", Color::BLUE);
+			Cursor::GetInst()->BufferWrite(ComPosX + 24, BulletY, "£ª", Color::YELLOW);
+			Cursor::GetInst()->BufferWrite(ComPosX + 28, BulletY - 1, "£ª", Color::RED);
+			Cursor::GetInst()->BufferWrite(ComPosX + 32, BulletY, "£ª", Color::GREEN);
+			Cursor::GetInst()->BufferWrite(ComPosX + 36, BulletY + 1, "£ª", Color::GRAY);
+		}
+		else
+		{
+			bossmotion = MOTION::DIE;
+			timer->Invoke<EntryPoint>(&EntryPoint::BossDieMotion, 1);
+		}
 	
+		
+	}
+	
+	Gp->GpsDraw(GPS::PLAYER,MOTION::NORMAL, ComPosX + 20, ComPosY + 2);
+	Gp->GpsDraw(GPS::PLAYER,MOTION::NORMAL, ComPosX + 24, ComPosY + 1);
+	Gp->GpsDraw(GPS::PLAYER,MOTION::NORMAL, ComPosX + 28, ComPosY);
+	Gp->GpsDraw(GPS::PLAYER,MOTION::NORMAL, ComPosX + 32, ComPosY + 1);
+	Gp->GpsDraw(GPS::PLAYER,MOTION::NORMAL, ComPosX + 36, ComPosY + 2);
+	if (!BossDead)
+	{
+		Gp->GpsDraw(GPS::MDMONSTER1, bossmotion, 28, 2);
+	}
+	
+	Cursor::GetInst()->BufferWrite(3, 3, static_cast<int>(BossDead),Color::WHITE);
 }
 
-void EntryPoint::Animation()
+
+
+void EntryPoint::BossDieMotion()
 {
-	double previous = GetTickCount();
-	double lag = 0.0;
-
-	while (true)
-	{
-		double current = GetTickCount();
-		double elasped = current - previous;
-		current = previous;
-		lag += elasped;
-
-		if (lag /200.0 >= anim1Speed / 5.0)
-		{
-			lag = 0.0;
-			
-		}
-
-
-
-	}
-
-
-
+	BossDead = true;
+	
 }
 
 void EntryPoint::Init()
 {
 	
 	Gp = new Graphics();
+	timer = new Timer();
 	Gp->GpsInit();
 }
 

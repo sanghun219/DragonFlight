@@ -1,6 +1,6 @@
 #pragma once
 #include<Windows.h>
-#include<fmod.h>
+#include <fmod.h>
 
 enum class SOUND
 {

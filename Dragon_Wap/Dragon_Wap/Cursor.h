@@ -23,7 +23,7 @@ public:
 	void BufferWrite(int x , int y , const char *string= " ", Color color = Color::WHITE);
 	void BufferWrite(int x, int y, std::string _string, Color color);
 	void BufferWrite(int x, int y, int _string, Color color);
-	void BufferWrite(int x, int y,long double _string, Color color);
+	void BufferWrite(int x, int y, double _string, Color color);
 	void BufferWrite(int x, int y, float _string, Color color);
 	void Flipping();
 	void BufferClear();

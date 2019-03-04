@@ -1,7 +1,7 @@
 #include <Windows.h>
 #include "Cursor.h"
 #include "SceneMgr.h"
-#define MS_PER_UPDATE 75
+#define MS_PER_UPDATE 60
 int main(void)
 {
 	
@@ -24,8 +24,6 @@ int main(void)
 			SceneMgr::GetInst()->Update();
 			SceneMgr::GetInst()->Draw();
 			Cursor::GetInst()->Flipping();
-			
-			
 		}
 		
 	}

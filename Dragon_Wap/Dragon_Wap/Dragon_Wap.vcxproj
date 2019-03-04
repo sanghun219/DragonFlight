@@ -70,8 +70,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\Users\sangh\OneDrive\Desktop\Dragon_wap\DragonFlight\Dragon_Wap\Dragon_Wap\Inc;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\sangh\OneDrive\Desktop\Dragon_wap\DragonFlight\Dragon_Wap\Dragon_Wap\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\sangh\Desktop\wapdragon\Dragon_Wap\Dragon_Wap\Inc;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\sangh\Desktop\wapdragon\Dragon_Wap\Dragon_Wap\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <IncludePath>C:\Users\sangh\OneDrive\Desktop\Dragon_wap\DragonFlight\Dragon_Wap\Dragon_Wap\Inc;$(IncludePath)</IncludePath>
@@ -83,7 +83,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -130,7 +130,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Wap_Option\Wap_Option\Sound.cpp" />
+    <ClCompile Include="Bullet.cpp" />
     <ClCompile Include="Cursor.cpp" />
     <ClCompile Include="EntryPoint.cpp" />
     <ClCompile Include="FileMgr.cpp" />
@@ -143,10 +143,12 @@
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="RankFile.cpp" />
     <ClCompile Include="SceneMgr.cpp" />
+    <ClCompile Include="Sound.cpp" />
     <ClCompile Include="Stage1.cpp" />
+    <ClCompile Include="Timer.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\Wap_Option\Wap_Option\Sound.h" />
+    <ClInclude Include="Bullet.h" />
     <ClInclude Include="Color.h" />
     <ClInclude Include="Cursor.h" />
     <ClInclude Include="EntryPoint.h" />
@@ -157,11 +159,13 @@
     <ClInclude Include="IScene.h" />
     <ClInclude Include="KeyMgr.h" />
     <ClInclude Include="RankFile.h" />
+    <ClInclude Include="Sound.h" />
     <ClInclude Include="Status.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Position.h" />
     <ClInclude Include="SceneMgr.h" />
     <ClInclude Include="Stage1.h" />
+    <ClInclude Include="Timer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

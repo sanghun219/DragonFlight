@@ -8,6 +8,13 @@ enum class MOTION
 	ATTACKED,
 	DIE,
 };
+enum class DIRECT
+{
+	FORWARD,
+	LEFT,
+	RIGHT,
+	BACK,
+};
 
 class Status
 {

@@ -58,6 +58,12 @@
     <Filter Include="소스 파일\99.Manager\KeyMgr">
       <UniqueIdentifier>{f32aba15-5ec2-4612-a8ba-a09452d86a48}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\01.Object\Bullet">
+      <UniqueIdentifier>{c92bcac2-ab77-442d-a6ab-c4be66c395d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\99.Manager\Timer">
+      <UniqueIdentifier>{916afccf-c375-4768-ac0b-6ab885028a72}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Maincpp.cpp">
@@ -93,14 +99,20 @@
     <ClCompile Include="RankFile.cpp">
       <Filter>소스 파일\98.Factory\File\RankFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Wap_Option\Wap_Option\Sound.cpp">
-      <Filter>소스 파일\99.Manager\Sound</Filter>
-    </ClCompile>
     <ClCompile Include="Graphics.cpp">
       <Filter>소스 파일\99.Manager\Graphics</Filter>
     </ClCompile>
     <ClCompile Include="KeyMgr.cpp">
       <Filter>소스 파일\99.Manager\KeyMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound.cpp">
+      <Filter>소스 파일\99.Manager\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>소스 파일\01.Object\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>소스 파일\99.Manager\Timer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -143,14 +155,20 @@
     <ClInclude Include="RankFile.h">
       <Filter>소스 파일\98.Factory\File\RankFile</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Wap_Option\Wap_Option\Sound.h">
-      <Filter>소스 파일\99.Manager\Sound</Filter>
-    </ClInclude>
     <ClInclude Include="Graphics.h">
       <Filter>소스 파일\99.Manager\Graphics</Filter>
     </ClInclude>
     <ClInclude Include="KeyMgr.h">
       <Filter>소스 파일\99.Manager\KeyMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound.h">
+      <Filter>소스 파일\99.Manager\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>소스 파일\01.Object\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>소스 파일\99.Manager\Timer</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
