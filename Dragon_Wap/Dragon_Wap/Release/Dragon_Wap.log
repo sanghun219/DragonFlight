@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(358,5): error : <LanguageStandard> 요소에 잘못된 값 "stdcpp17"이(가) 있습니다.
+=======
 ﻿  Sound.cpp
 c1xx : fatal error C1083: 소스 파일을 열 수 없습니다. '..\..\..\..\Wap_Option\Wap_Option\Sound.cpp': No such file or directory
   Cursor.cpp
@@ -13,3 +16,4 @@ c1xx : fatal error C1083: 소스 파일을 열 수 없습니다. '..\..\..\..\Wa
   RankFile.cpp
   SceneMgr.cpp
   Stage1.cpp
+>>>>>>> 6f9ce1d56eb9ae5181ad52cc7c526514fa24e1b3

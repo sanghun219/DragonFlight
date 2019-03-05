@@ -99,11 +99,17 @@
     <ClCompile Include="RankFile.cpp">
       <Filter>소스 파일\98.Factory\File\RankFile</Filter>
     </ClCompile>
+<<<<<<< HEAD
+    <ClCompile Include="KeyMgr.cpp">
+      <Filter>소스 파일\99.Manager\KeyMgr</Filter>
+    </ClCompile>
+=======
+>>>>>>> 6f9ce1d56eb9ae5181ad52cc7c526514fa24e1b3
     <ClCompile Include="Graphics.cpp">
       <Filter>소스 파일\99.Manager\Graphics</Filter>
     </ClCompile>
-    <ClCompile Include="KeyMgr.cpp">
-      <Filter>소스 파일\99.Manager\KeyMgr</Filter>
+    <ClCompile Include="Sound.cpp">
+      <Filter>소스 파일\99.Manager\Sound</Filter>
     </ClCompile>
     <ClCompile Include="Sound.cpp">
       <Filter>소스 파일\99.Manager\Sound</Filter>
@@ -164,11 +170,14 @@
     <ClInclude Include="Sound.h">
       <Filter>소스 파일\99.Manager\Sound</Filter>
     </ClInclude>
+<<<<<<< HEAD
+=======
     <ClInclude Include="Bullet.h">
       <Filter>소스 파일\01.Object\Bullet</Filter>
     </ClInclude>
     <ClInclude Include="Timer.h">
       <Filter>소스 파일\99.Manager\Timer</Filter>
     </ClInclude>
+>>>>>>> 6f9ce1d56eb9ae5181ad52cc7c526514fa24e1b3
   </ItemGroup>
 </Project>

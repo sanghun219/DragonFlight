@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -22,7 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{5DFC1605-9498-487F-A347-5B2918A8324E}</ProjectGuid>
     <RootNamespace>DragonWap</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -70,11 +70,16 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+<<<<<<< HEAD
+    <IncludePath>C:\Users\glafu\Desktop\김은수\Develop\DragonFlight\Dragon_Wap\Dragon_Wap\Inc;C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\shared;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\glafu\Desktop\김은수\Develop\DragonFlight\Dragon_Wap\Dragon_Wap\lib;$(LibraryPath)</LibraryPath>
+=======
     <IncludePath>C:\Users\sangh\Desktop\wapdragon\Dragon_Wap\Dragon_Wap\Inc;$(IncludePath)</IncludePath>
     <LibraryPath>C:\Users\sangh\Desktop\wapdragon\Dragon_Wap\Dragon_Wap\lib;$(LibraryPath)</LibraryPath>
+>>>>>>> 6f9ce1d56eb9ae5181ad52cc7c526514fa24e1b3
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>C:\Users\sangh\OneDrive\Desktop\Dragon_wap\DragonFlight\Dragon_Wap\Dragon_Wap\Inc;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\um;C:\Users\glafu\Desktop\김은수\Develop\DragonFlight\Wap_Option\Inc;$(IncludePath)</IncludePath>
     <LibraryPath>C:\Users\sangh\OneDrive\Desktop\Dragon_wap\DragonFlight\Dragon_Wap\Dragon_Wap\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -83,7 +88,10 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+<<<<<<< HEAD
+=======
       <LanguageStandard>stdcpplatest</LanguageStandard>
+>>>>>>> 6f9ce1d56eb9ae5181ad52cc7c526514fa24e1b3
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -130,7 +138,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+<<<<<<< HEAD
+=======
     <ClCompile Include="Bullet.cpp" />
+>>>>>>> 6f9ce1d56eb9ae5181ad52cc7c526514fa24e1b3
     <ClCompile Include="Cursor.cpp" />
     <ClCompile Include="EntryPoint.cpp" />
     <ClCompile Include="FileMgr.cpp" />
@@ -148,7 +159,10 @@
     <ClCompile Include="Timer.cpp" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+=======
     <ClInclude Include="Bullet.h" />
+>>>>>>> 6f9ce1d56eb9ae5181ad52cc7c526514fa24e1b3
     <ClInclude Include="Color.h" />
     <ClInclude Include="Cursor.h" />
     <ClInclude Include="EntryPoint.h" />
