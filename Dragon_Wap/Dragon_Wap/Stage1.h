@@ -1,5 +1,6 @@
 #pragma once
 #include "IScene.h"
+#include "Player.h"
 class Stage1:public IScene
 {
 public:
@@ -10,5 +11,6 @@ public:
 public:
 	Stage1();
 	~Stage1();
+	Player * p;
 };
 

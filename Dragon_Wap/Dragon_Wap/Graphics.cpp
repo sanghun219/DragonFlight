@@ -3,7 +3,7 @@
 
 void Graphics::GpsInit()
 {
-	NormalCharacter[static_cast<unsigned int>(GPS::PLAYER)][0] = " A";
+	NormalCharacter[static_cast<unsigned int>(GPS::PLAYER)][0] = " A ";
 	NormalCharacter[static_cast<unsigned int>(GPS::PLAYER)][1] = "< >";
 	NormalCharacter[static_cast<unsigned int>(GPS::PLAYER)][2] = "";
 	BossCharcter[static_cast<unsigned int>(GPS::BOSS1)][0] = "";

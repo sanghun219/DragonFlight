@@ -43,8 +43,11 @@ void SceneMgr::SetScene(SCENE scene)
 
 	}
 
-	if (m_Scene != nullptr)
+	if (m_Scene != nullptr) {
+		m_Scene->Gp = new Graphics();
+		m_Scene->Gp->GpsInit();
 		m_Scene->Init();
+	}
 }
 
 void SceneMgr::Update()
