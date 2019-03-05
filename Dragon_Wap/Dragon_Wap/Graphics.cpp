@@ -6,7 +6,8 @@ void Graphics::GpsInit()
 	NormalCharacter[static_cast<unsigned int>(GPS::PLAYER)][0] = " A ";
 	NormalCharacter[static_cast<unsigned int>(GPS::PLAYER)][1] = "< >";
 	NormalCharacter[static_cast<unsigned int>(GPS::PLAYER)][2] = "";
-	BossCharcter[static_cast<unsigned int>(GPS::BOSS1)][0] = "";
+	NormalCharacter[static_cast<unsigned int>(GPS::BULLET)][0] = "*";
+	//BossCharcter[static_cast<unsigned int>(GPS::BOSS1)][0] = "";
 	BigCharacter[static_cast<unsigned int>(GPS::MDMONSTER1)][0] = "б╫''''''''''''''''''б╫";
 	BigCharacter[static_cast<unsigned int>(GPS::MDMONSTER1)][1] = "бсбрбубубр  брбубубрбс";
 	BigCharacter[static_cast<unsigned int>(GPS::MDMONSTER1)][2] = "брбсбсбсбс  бсбсбсбсбр";
@@ -27,6 +28,9 @@ void Graphics::GpsDraw(GPS gps,MOTION motion, int x, int y,Color color)const
 		{
 			Cursor::GetInst()->BufferWrite(x, y + i, NormalCharacter[static_cast<unsigned int>(gps)][i], color);
 		}
+		break;
+	case GPS::BULLET:
+		Cursor::GetInst()->BufferWrite(x, y, NormalCharacter[static_cast<unsigned int>(gps)][0], color);
 		break;
 	case GPS::MONSTER1:
 		for (int i = 0; i < static_cast<unsigned int>(GPS_SIZE::NORMAL); i++)

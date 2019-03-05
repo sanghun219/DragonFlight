@@ -1,5 +1,6 @@
 #include "Player.h"
 #include "Stage1.h"
+#include "Bullet.h"
 
 Player::Player()
 {
@@ -35,6 +36,12 @@ void Player::Update()
 	if (GetAsyncKeyState(VK_DOWN)) {
 		this->current_scene->Gp->GpsDraw(GPS::PLAYER, MOTION::NORMAL, x, y + 1, Color::WHITE);
 		this->position.SetPosition(x, y + 1);
+	}
+	if (GetAsyncKeyState(VK_SPACE)) {
+		Bullet * b = new Bullet(*this);
+		b->Update();
+		this->current_scene->Gp->GpsDraw(GPS::BULLET, MOTION::NORMAL, x + 1, y - 1, Color::WHITE);
+		this->current_scene->bullet_vec.push_back(b);
 	}
 	this->current_scene->Gp->GpsDraw(GPS::PLAYER, MOTION::NORMAL, x, y, Color::WHITE);
 }
