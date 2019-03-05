@@ -2,6 +2,7 @@
 #include "Cursor.h"
 #include "Graphics.h"
 #include "Timer.h"
+#include "SceneMgr.h"
 using namespace std;
 
 EntryPoint::EntryPoint()
@@ -98,13 +99,13 @@ void EntryPoint::Init()
 
 void EntryPoint::Update()
 {
-
+	SceneMgr::GetInst()->SetScene(SCENE::STAGE1);
 }
 
 void EntryPoint::Draw()
 {
 	//Frame1();
-	Frame2();
+	//Frame2();
 }
 
 void EntryPoint::Destroy()

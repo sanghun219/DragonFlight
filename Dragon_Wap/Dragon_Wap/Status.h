@@ -21,6 +21,8 @@ class Status
 protected:
 	unsigned int HP;
 	unsigned int MP;
+	int x;
+	int y;
 	double Exp;
 	std::string Name;
 	double Speed;

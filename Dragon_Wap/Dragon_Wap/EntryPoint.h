@@ -10,7 +10,6 @@ private:
 	bool ClearFrame2 = false;
 	bool BossDead = false;
 private:
-	Graphics *Gp;
 	Timer * timer;
 	double anim1Elsaped;
 	double anim1Speed = 3;

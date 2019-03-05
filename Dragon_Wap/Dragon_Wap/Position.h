@@ -1,4 +1,5 @@
 #pragma once
+#include "Cursor.h"
 class Position 
 {
 private:
@@ -6,7 +7,7 @@ private:
 	unsigned short Y;
 public:
 	Position(unsigned short _x, unsigned short _y) :X(_x), Y(_y) {}
-	void SetPosition(const unsigned short &_x, const unsigned short &_y) 
+	void SetPosition(const unsigned short _x, const unsigned short _y) 
 	{
 		this->X = _x;
 		this->Y = _y;
