@@ -1,4 +1,5 @@
 #pragma once
+#include "Cursor.h"
 class IScene;
 
 enum class SCENE
@@ -20,6 +21,7 @@ private:
 public:
 	static SceneMgr* GetInst()
 	{
+		Cursor::GetInst()->BufferWrite(3, 3, "asdasd");
 		if (m_pInst == nullptr)
 			m_pInst = new SceneMgr();
 		return m_pInst;

@@ -8,6 +8,8 @@ public:
 	virtual void Update()override;
 	virtual void Draw()override;
 	virtual void Destroy()override;
+
+	bool isBulletInRect(Position pos, int x, int y);
 public:
 	Stage1();
 	~Stage1();

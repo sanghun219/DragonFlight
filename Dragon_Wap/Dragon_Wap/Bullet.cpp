@@ -36,7 +36,7 @@ void Bullet::Init()
 
 void Bullet::Update()
 {
-	
+	Bullet::Move(DIRECT::FORWARD, 10);
 }
 
 void Bullet::Draw()

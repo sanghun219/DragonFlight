@@ -5,6 +5,7 @@
 enum class GPS 
 {
 	PLAYER,
+	BULLET,
 	MONSTER1,
 	MONSTER2,
 	MONSTER3,
@@ -29,7 +30,7 @@ class Graphics
 public:
 	std::string NormalCharacter[static_cast<unsigned int>(GPS::NORMAL_MON_END)][3];
 	std::string BigCharacter[static_cast<unsigned int>(GPS::BOSS1)][6];
-	std::string BossCharcter[static_cast<unsigned int>(GPS::BOSS1)][12];
+	//std::string BossCharcter[static_cast<unsigned int>(GPS::BOSS1)][12];
 
 public:
 	void GpsInit();
