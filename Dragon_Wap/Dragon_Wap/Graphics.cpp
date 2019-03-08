@@ -3,19 +3,22 @@
 
 void Graphics::GpsInit()
 {
-	NormalCharacter[static_cast<unsigned int>(GPS::PLAYER)][0] = " A ";
-	NormalCharacter[static_cast<unsigned int>(GPS::PLAYER)][1] = "< >";
-	NormalCharacter[static_cast<unsigned int>(GPS::PLAYER)][2] = "";
-	NormalCharacter[static_cast<unsigned int>(GPS::BULLET)][0] = "*";
-	//BossCharcter[static_cast<unsigned int>(GPS::BOSS1)][0] = "";
-	BigCharacter[static_cast<unsigned int>(GPS::MDMONSTER1)][0] = "¡×''''''''''''''''''¡×";
-	BigCharacter[static_cast<unsigned int>(GPS::MDMONSTER1)][1] = "¡á¡à¡ã¡ã¡à  ¡à¡ã¡ã¡à¡á";
-	BigCharacter[static_cast<unsigned int>(GPS::MDMONSTER1)][2] = "¡à¡á¡á¡á¡á  ¡á¡á¡á¡á¡à";
-	BigCharacter[static_cast<unsigned int>(GPS::MDMONSTER1)][3] = "¡à¡á¡á¡á¡á  ¡á¡á¡á¡á¡à";
-	BigCharacter[static_cast<unsigned int>(GPS::MDMONSTER1)][4] = "¡ß¡Ú¡Ú¡Ú¡Ú  ¡Ú¡Ú¡Ú¡Ú¡ß";
-	BigCharacter[static_cast<unsigned int>(GPS::MDMONSTER1)][5] = "      ¡Ú¡Ú  ¡Ú¡Ú";
-	BigCharacter[static_cast<unsigned int>(GPS::MDMONSTER1)][6] = "         ¡Ú¡Ú";
-	BigCharacter[static_cast<unsigned int>(GPS::MDMONSTER1)][7] = "        ''¡å''";
+	//NormalCharacter[static_cast<unsigned int>(GPS::PLAYER)][0] = " A ";
+	//NormalCharacter[static_cast<unsigned int>(GPS::PLAYER)][1] = "< >";
+	//NormalCharacter[static_cast<unsigned int>(GPS::PLAYER)][2] = "";
+	//NormalCharacter[static_cast<unsigned int>(GPS::BULLET)][0] = "*";
+	//NormalCharacter[static_cast<unsigned int>(GPS::MONSTER1)][0] = "";
+	//NormalCharacter[static_cast<unsigned int>(GPS::MONSTER1)][1] = "<  >";
+	//NormalCharacter[static_cast<unsigned int>(GPS::MONSTER1)][2] = " ¢£ ";
+	////BossCharcter[static_cast<unsigned int>(GPS::BOSS1)][0] = "";
+	//BigCharacter[static_cast<unsigned int>(GPS::MDMONSTER1)][0] = "¡×''''''''''''''''''¡×";
+	//BigCharacter[static_cast<unsigned int>(GPS::MDMONSTER1)][1] = "¡á¡à¡ã¡ã¡à  ¡à¡ã¡ã¡à¡á";
+	//BigCharacter[static_cast<unsigned int>(GPS::MDMONSTER1)][2] = "¡à¡á¡á¡á¡á  ¡á¡á¡á¡á¡à";
+	//BigCharacter[static_cast<unsigned int>(GPS::MDMONSTER1)][3] = "¡à¡á¡á¡á¡á  ¡á¡á¡á¡á¡à";
+	//BigCharacter[static_cast<unsigned int>(GPS::MDMONSTER1)][4] = "¡ß¡Ú¡Ú¡Ú¡Ú  ¡Ú¡Ú¡Ú¡Ú¡ß";
+	//BigCharacter[static_cast<unsigned int>(GPS::MDMONSTER1)][5] = "      ¡Ú¡Ú  ¡Ú¡Ú";
+	//BigCharacter[static_cast<unsigned int>(GPS::MDMONSTER1)][6] = "         ¡Ú¡Ú";
+	//BigCharacter[static_cast<unsigned int>(GPS::MDMONSTER1)][7] = "        ''¡å''";
 
 }
 

@@ -1,4 +1,2 @@
-﻿  Stage1.cpp
-c:\users\glafu\desktop\eunsu\develop\dragonflight\dragon_wap\dragon_wap\iscene.h(2): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
-  Dragon_Wap.vcxproj -> C:\Users\glafu\Desktop\eunsu\Develop\DragonFlight\Dragon_Wap\Debug\Dragon_Wap.exe
-  Dragon_Wap.vcxproj -> C:\Users\glafu\Desktop\eunsu\Develop\DragonFlight\Dragon_Wap\Debug\Dragon_Wap.pdb (Partial PDB)
+﻿  Bullet.cpp
+  Dragon_Wap.vcxproj -> C:\Users\sangh\Desktop\wapdragon\Dragon_Wap\Debug\Dragon_Wap.exe

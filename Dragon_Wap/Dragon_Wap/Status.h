@@ -18,20 +18,24 @@ enum class DIRECT
 
 class Status
 {
-protected:
+public:
 	unsigned int HP;
 	unsigned int MP;
-	int x;
-	int y;
 	double Exp;
 	std::string Name;
 	double Speed;
-	MOTION motion;
-public:
-
+	bool isDead;
 public:
 	Status(unsigned int hp, unsigned int mp, double exp,
-		std::string name, double speed) {};
+		std::string name, double speed) 
+	{
+		this->HP = hp;
+		this->MP = mp;
+		this->Exp = exp;
+		this->Name = name;
+		this->Speed = speed;
+		isDead = false;
+	};
 	virtual ~Status() {};
 };
 

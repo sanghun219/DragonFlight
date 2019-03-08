@@ -22,14 +22,14 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{5DFC1605-9498-487F-A347-5B2918A8324E}</ProjectGuid>
     <RootNamespace>DragonWap</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -70,8 +70,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\Users\glafu\Desktop\eunsu\Develop\DragonFlight\Dragon_Wap\Dragon_Wap\Inc;C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\shared;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\glafu\Desktop\eunsu\Develop\DragonFlight\Dragon_Wap\Dragon_Wap\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\sangh\Desktop\wapdragon\Dragon_Wap\Dragon_Wap\Inc;C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\shared;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\sangh\Desktop\wapdragon\Dragon_Wap\Dragon_Wap\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <IncludePath>C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\um;C:\Users\glafu\Desktop\eunsu\Develop\DragonFlight\Wap_Option\Inc;$(IncludePath)</IncludePath>
@@ -131,6 +131,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Bullet.cpp" />
+    <ClCompile Include="Character.cpp" />
     <ClCompile Include="Cursor.cpp" />
     <ClCompile Include="EntryPoint.cpp" />
     <ClCompile Include="FileMgr.cpp" />
@@ -140,15 +141,19 @@
     <ClCompile Include="IScene.cpp" />
     <ClCompile Include="KeyMgr.cpp" />
     <ClCompile Include="Maincpp.cpp" />
+    <ClCompile Include="Monster.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Math.cpp" />
     <ClCompile Include="RankFile.cpp" />
     <ClCompile Include="SceneMgr.cpp" />
     <ClCompile Include="Sound.cpp" />
+    <ClCompile Include="Sprite.cpp" />
     <ClCompile Include="Stage1.cpp" />
     <ClCompile Include="Timer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bullet.h" />
+    <ClInclude Include="Character.h" />
     <ClInclude Include="Color.h" />
     <ClInclude Include="Cursor.h" />
     <ClInclude Include="EntryPoint.h" />
@@ -158,11 +163,13 @@
     <ClInclude Include="IObject.h" />
     <ClInclude Include="IScene.h" />
     <ClInclude Include="KeyMgr.h" />
+    <ClInclude Include="Monster.h" />
     <ClInclude Include="RankFile.h" />
     <ClInclude Include="Sound.h" />
+    <ClInclude Include="Sprite.h" />
     <ClInclude Include="Status.h" />
     <ClInclude Include="Player.h" />
-    <ClInclude Include="Position.h" />
+    <ClInclude Include="Math.h" />
     <ClInclude Include="SceneMgr.h" />
     <ClInclude Include="Stage1.h" />
     <ClInclude Include="Timer.h" />

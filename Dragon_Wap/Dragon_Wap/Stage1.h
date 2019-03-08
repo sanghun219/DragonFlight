@@ -1,6 +1,7 @@
 #pragma once
 #include "IScene.h"
 #include "Player.h"
+#include "Monster.h"
 class Stage1:public IScene
 {
 public:
@@ -9,10 +10,11 @@ public:
 	virtual void Draw()override;
 	virtual void Destroy()override;
 
-	bool isBulletInRect(Position pos, int x, int y);
+
 public:
 	Stage1();
 	~Stage1();
-	Player * p;
+	Player * player;
+	Monster * monster;
 };
 

@@ -1,8 +1,9 @@
 #include "Bullet.h"
 
-Bullet::Bullet(IObject & obj)
+Bullet::Bullet(const Position & obj):Character2D(obj.GetPositionX()
+	,obj.GetPositionY())
 {
-	this->position = obj.position;
+	sprite->SpriteByLine[0] = " * ";
 }
 
 Bullet::~Bullet()
@@ -14,16 +15,16 @@ void Bullet::Move(DIRECT dir, double speed)
 	switch (dir)
 	{
 	case DIRECT::FORWARD:
-		this->position.SetPosition(this->position.GetPositionX(), this->position.GetPositionY()-1);
+		origin->SetPosition(origin->GetPositionX(), origin->GetPositionY()-1);
 		break;
 	case DIRECT::LEFT:
-		this->position.SetPosition(this->position.GetPositionX()-1, this->position.GetPositionY());
+		origin->SetPosition(origin->GetPositionX()-1, origin->GetPositionY());
 		break;
 	case DIRECT::RIGHT:
-		this->position.SetPosition(this->position.GetPositionX()+1, this->position.GetPositionY());
+		origin->SetPosition(origin->GetPositionX()+1, origin->GetPositionY());
 		break;
 	case DIRECT::BACK:
-		this->position.SetPosition(this->position.GetPositionX(), this->position.GetPositionY() + 1);
+		origin->SetPosition(origin->GetPositionX(), origin->GetPositionY() + 1);
 		break;
 	default:
 		break;
@@ -34,15 +35,19 @@ void Bullet::Init()
 {
 }
 
+
 void Bullet::Update()
 {
 	Bullet::Move(DIRECT::FORWARD, 10);
+
 }
 
 void Bullet::Draw()
 {
+	sprite->DrawSprite(Color::YELLOW);
 }
 
 void Bullet::Destroy()
 {
 }
+
